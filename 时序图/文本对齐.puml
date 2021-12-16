@@ -1,0 +1,5 @@
+@startuml
+skinparam responseMessageBelowArrow true /'让响应信息显示在箭头下面'/
+Bob -> Alice : hello
+Alice -> Bob : ok
+@enduml

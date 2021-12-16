@@ -1,0 +1,19 @@
+@startuml
+/'修改箭头样式的方式有以下几种:
+• 表示一条丢失的消息：末尾加 x
+• 让箭头只有上半部分或者下半部分：将 < 和 > 替换成\或者 /
+• 细箭头：将箭头标记写两次 (如 >> 或 //)
+• 虚线箭头：用 -- 替代 -
+• 箭头末尾加圈：->o
+• 双向箭头：<->'/
+Bob ->x Alice
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+Bob ->o Alice
+Bob o\\-- Alice
+Bob <-> Alice
+Bob <->o Alice
+@enduml
