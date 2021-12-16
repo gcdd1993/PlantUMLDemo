@@ -1,0 +1,13 @@
+@startuml
+(First usecase)/
+(Another usecase)/ as (UC2)
+usecase/ UC3
+usecase/ (Last\nusecase) as UC4
+@enduml
+
+@startuml
+:First Actor:/
+:Another\nactor:/ as Man2
+actor/ Woman3
+actor/ :Last actor: as Person1
+@enduml

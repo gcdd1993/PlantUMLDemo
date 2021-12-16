@@ -1,0 +1,18 @@
+@startuml
+:user: --> (Use case 1)
+:user: -> (Use case 2)
+@enduml
+
+@startuml
+' 默认连接是竖直方向的，用--表示，可以用一个横杠或点来表示水平连接
+(Use case 1) <.. :user:
+(Use case 2) <- :user:
+@enduml
+
+@startuml
+' 还可以通过给箭头添加 left, right, up 或 down 等关键字来改变方向
+:user: -left-> (dummyLeft)
+:user: -right-> (dummyRight)
+:user: -up-> (dummyUp)
+:user: -down-> (dummyDown)
+@enduml

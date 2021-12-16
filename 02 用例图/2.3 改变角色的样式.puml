@@ -1,0 +1,25 @@
+@startuml
+' 火柴人 默认
+:User: --> (Use)
+"Main Admin" as Admin
+"Use the application" as (Use)
+Admin --> (Admin the application)
+@enduml
+
+@startuml
+' 用户头像
+skinparam actorStyle awesome
+:User: --> (Use)
+"Main Admin" as Admin
+"Use the application" as (Use)
+Admin --> (Admin the application)
+@enduml
+
+@startuml
+' 透明人
+skinparam actorStyle Hollow
+:User: --> (Use)
+"Main Admin" as Admin
+"Use the application" as (Use)
+Admin --> (Admin the application)
+@enduml
