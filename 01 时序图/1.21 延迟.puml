@@ -1,0 +1,7 @@
+@startuml
+Alice -> Bob: 认证请求
+...
+Bob --> Alice: 认证响应
+...5分钟后...
+Bob --> Alice: 再见！
+@enduml

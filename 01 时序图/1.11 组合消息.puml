@@ -1,0 +1,31 @@
+@startuml
+/'
+我们可以通过以下关键词来组合消息：
+• alt/else
+• opt
+• loop
+• par
+• break
+• critical
+• group, 后面紧跟着消息内容
+可以在标头 (header) 添加需要显示的文字 (对于 group 关键字，参看下一章节 ’ 次级分组标签’)。
+关键词 end 用来结束分组。
+注意，分组可以嵌套使用
+'/
+
+Alice -> Bob: 认证请求
+alt 成功情况
+Bob -> Alice: 认证接受
+else 某种失败情况
+Bob -> Alice: 认证失败
+group 我自己的标签
+Alice -> Log : 开始记录攻击日志
+loop 1000次
+Alice -> Bob: DNS 攻击
+end
+Alice -> Log : 结束记录攻击日志
+end
+else 另一种失败
+Bob -> Alice: 请重复
+end
+@enduml

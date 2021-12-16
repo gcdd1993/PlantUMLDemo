@@ -1,0 +1,7 @@
+@startuml
+skinparam maxMessageSize 50
+participant a
+participant b
+a -> b :这\n一条\n是\n手动换行
+a -> b :this is a very long message on several words
+@enduml

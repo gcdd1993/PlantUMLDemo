@@ -1,0 +1,23 @@
+@startuml
+title __Simple__ **communication** example
+Alice -> Bob: Authentication Request
+Bob -> Alice: Authentication Response
+@enduml
+
+在标题描述中使用\n表示换行。
+@startuml
+title __Simple__ communication example\non several lines
+Alice -> Bob: Authentication Request
+Bob -> Alice: Authentication Response
+@enduml
+
+还可以使用关键字 title 和 end title 定义多行标题
+@startuml
+title
+<u>Simple</u> communication example
+on <i>several</i> lines and using <font color=red>html</font>
+This is hosted by <img:sourceforge.jpg>
+end title
+Alice -> Bob: Authentication Request
+Bob -> Alice: Authentication Response
+@enduml

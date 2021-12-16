@@ -1,0 +1,9 @@
+@startuml
+'note across: 备注描述
+Alice->Bob:m1
+Bob->Charlie:m2
+note over Alice, Charlie: 创建跨越所有参与者的备注的旧方法：\n ""note over //FirstPart, LastPart//"".
+note across: 新方法：\n""note across""
+Bob->Alice
+hnote across: 跨越所有参与者的备注。
+@enduml

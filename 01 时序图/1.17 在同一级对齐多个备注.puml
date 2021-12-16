@@ -1,0 +1,11 @@
+@startuml
+' 没有/ （默认情况下，备注不是对齐的。）
+
+'note over Alice : Alice的初始状态
+'note over Bob : Bob的初始状态
+'Bob -> Alice : hello
+
+note over Alice : Alice的初始状态
+/ note over Bob : Bob的初始状态
+Bob -> Alice : hello
+@enduml

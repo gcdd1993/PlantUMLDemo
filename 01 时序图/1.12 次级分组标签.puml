@@ -1,0 +1,11 @@
+@startuml
+Alice -> Bob: 认证请求
+Bob -> Alice: 认证失败
+group 我自己的标签 [我自己的标签2]
+Alice -> Log : 开始记录攻击日志
+loop 1000次
+Alice -> Bob: DNS攻击
+end
+Alice -> Log : 结束记录攻击日志
+end
+@enduml

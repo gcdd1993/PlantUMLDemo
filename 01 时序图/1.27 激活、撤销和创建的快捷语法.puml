@@ -1,0 +1,33 @@
+@startuml
+/'
+在指定目标参与者后，可以立即使用以下语法：
+• ++ 激活目标（可选择在后面加上 #color）
+• -- 撤销激活源
+• ** 创建目标实例
+• !! 摧毁目标实例
+'/
+
+alice -> bob ++ : hello
+bob -> bob ++ : self call
+bob -> bib ++ #005500 : hello
+bob -> george ** : create
+return done
+return rc
+bob -> george !! : delete
+return success
+
+@enduml
+
+@startuml
+' 可以在一行上同时激活和撤销
+alice -> bob ++ : hello1
+bob -> charlie --++ : hello2
+charlie --> alice -- : ok
+@enduml
+
+@startuml
+alice -> bob --++ #gold: hello
+bob -> alice --++ #gold: you too
+alice -> bob --: step1
+alice -> bob : step2
+@enduml
